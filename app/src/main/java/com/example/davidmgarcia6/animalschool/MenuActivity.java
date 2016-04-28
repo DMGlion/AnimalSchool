@@ -22,7 +22,7 @@ public class MenuActivity extends AppCompatActivity {
         newSafari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newViewSafari = new Intent(v.getContext(),SafariView.class);
+                Intent newViewSafari = new Intent(v.getContext(), SafariView.class);
                 startActivity(newViewSafari);
             }
         });
@@ -64,33 +64,54 @@ public class MenuActivity extends AppCompatActivity {
             newOcean.setEnabled(false);
             newForest.setEnabled(false);
             newArctic.setEnabled(false);
+
+            newSafari.setAlpha(1.0f);
+            newOcean.setAlpha(0.5f);
+            newForest.setAlpha(0.5f);
+            newArctic.setAlpha(0.5f);
         }
         else if (UserScore.getQuizScore() == 1){
             newSafari.setEnabled(true);
             newOcean.setEnabled(true);
             newForest.setEnabled(false);
             newArctic.setEnabled(false);
-        }
-        else if (UserScore.getQuizScore() == 2){
-            newSafari.setEnabled(true);
-            newOcean.setEnabled(true);
-            newForest.setEnabled(true);
-            newArctic.setEnabled(false);
+
+            newSafari.setAlpha(1.0f);
+            newOcean.setAlpha(1.0f);
+            newForest.setAlpha(0.5f);
+            newArctic.setAlpha(0.5f);
 
         }
-        else{
-            newSafari.setEnabled(true);
-            newOcean.setEnabled(true);
-            newForest.setEnabled(true);
-            newArctic.setEnabled(true);
-        }
+//        else if (UserScore.getQuizScore() == 2){
+//            newSafari.setEnabled(true);
+//            newForest.setEnabled(true);
+//            newOcean.setEnabled(true);
+//            newArctic.setEnabled(false);
+//
+//            newSafari.setAlpha(1.0f);
+//            newForest.setAlpha(1.0f);
+//            newOcean.setAlpha(1.0f);
+//            newArctic.setAlpha(0.5f);
+//
+//        }
+//        else{
+//            newSafari.setEnabled(true);
+//            newForest.setEnabled(true);
+//            newOcean.setEnabled(true);
+//            newArctic.setEnabled(true);
+//
+//            newSafari.setAlpha(1.0f);
+//            newForest.setAlpha(1.0f);
+//            newOcean.setAlpha(1.0f);
+//            newArctic.setAlpha(1.0f);
+//        }
 
         Button newStats = (Button) findViewById(R.id.StatLevel);
         assert newStats !=null;
         newStats.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newViewStats = new Intent(v.getContext(),StatsView.class);
+                Intent newViewStats = new Intent(v.getContext(), StatsView.class);
                 startActivity(newViewStats);
             }
         });
