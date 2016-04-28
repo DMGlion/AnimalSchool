@@ -61,6 +61,7 @@
         <activity
             android:name=".ForestResultFactsActivity"
             android:label="Forest Facts" />
+        <activity android:name=".ArcticResultFactsActivity"
+            android:label="Arctic Facts" />
     </application>
-
 </manifest>

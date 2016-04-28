@@ -16,4 +16,7 @@
     <string name="monkey_text_name">Name: Monkey</string>
     <string name="monkey_text_diet">Diet: Bananas</string>
     <string name="monkey_text_habitat">Habitat: Forest</string>
+    <string name="penguin_text_name">Name: Penguin</string>
+    <string name="penguin_text_diet">Diet: Fish</string>
+    <string name="penguin_text_habitat">Habitat: Southern Hemisphere</string>
 </resources>
