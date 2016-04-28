@@ -58,6 +58,11 @@ public class MenuActivity extends AppCompatActivity {
         });
 
         //TODO: Need to investigate how to implement Gamification on the Menu buttons
+        //TODO: Hookup Facts screens from correct answers with timers
+        //TODO: Implement MPAndroidCharts for the Stats Screen
+        //TODO: Fonts JuneGloom
+        //TODO: Look at app crashes when audio is triggered too fast
+
 
 //        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
 
