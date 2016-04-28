@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.davidmgarcia6.animalschool">
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,9 +13,9 @@
         <activity android:name=".MenuActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
+            <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
