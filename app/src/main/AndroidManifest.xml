@@ -54,14 +54,23 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".SafariResultFactsActivity"
-            android:label="Safari Facts" />
+            android:label="Safari Facts"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".OceanResultFactsActivity"
-            android:label="Ocean Facts" />
+            android:label="Ocean Facts"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ForestResultFactsActivity"
-            android:label="Forest Facts" />
-        <activity android:name=".ArcticResultFactsActivity"
-            android:label="Arctic Facts" />
+            android:label="Forest Facts"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ArcticResultFactsActivity"
+            android:label="Arctic Facts"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
