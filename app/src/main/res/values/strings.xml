@@ -10,4 +10,7 @@
     <string name="lion_text_habitat">Habitat: Sub-Saharan Africa</string>
     <string name="lion_text_congrats">Congratulations!</string>
     <string name="lion_text_score">You scored 1 out of 5</string>
+    <string name="orca_text_name">Name: Orca</string>
+    <string name="orca_text_diet">Diet: Birds, Squid and Octopuses</string>
+    <string name="orca_text_habitat">Habitat: Oceans and Seas</string>
 </resources>

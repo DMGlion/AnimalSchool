@@ -52,11 +52,12 @@
             android:label="Stats"
             android:parentActivityName=".MenuActivity"
             android:screenOrientation="portrait" />
-
-        <activity android:name=".SafariResultFactsActivity"
-            android:label="Safari Facts"
-            />
-
+        <activity
+            android:name=".SafariResultFactsActivity"
+            android:label="Safari Facts" />
+        <activity
+            android:name=".OceanResultFactsActivity"
+            android:label="Ocean Facts" />
 
     </application>
 
