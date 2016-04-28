@@ -34,6 +34,7 @@ public class ArcticView extends AppCompatActivity{
         other.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -44,6 +45,7 @@ public class ArcticView extends AppCompatActivity{
         polarbear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -54,6 +56,7 @@ public class ArcticView extends AppCompatActivity{
         sealion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -64,6 +67,7 @@ public class ArcticView extends AppCompatActivity{
         pinguin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.winnero);
                 mp.start();
             }
@@ -90,6 +94,7 @@ public class ArcticView extends AppCompatActivity{
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.penguin3);
                 mp.start();
                 handleShakeEvent(count);
@@ -115,5 +120,13 @@ public class ArcticView extends AppCompatActivity{
         // Add the following line to unregister the Sensor Manager onPause
         mSensorManager.unregisterListener(mShakeDetector);
         super.onPause();
+    }
+    private void stopPlaying(){
+        if(mp!=null){
+            mp.stop();
+            mp.reset();
+            mp.release();
+            mp=null;
+        }
     }
 }

@@ -30,6 +30,7 @@ public class OceanView extends AppCompatActivity {
         shark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -40,6 +41,7 @@ public class OceanView extends AppCompatActivity {
         crab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -50,6 +52,7 @@ public class OceanView extends AppCompatActivity {
         dolphin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -60,6 +63,7 @@ public class OceanView extends AppCompatActivity {
         orc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.winnero);
                 mp.start();
             }
@@ -88,6 +92,7 @@ public class OceanView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.wale);
                 mp.start();
                 handleShakeEvent(count);
@@ -113,4 +118,13 @@ public class OceanView extends AppCompatActivity {
         mSensorManager.unregisterListener(mShakeDetector);
         super.onPause();
     }
+    private void stopPlaying(){
+        if(mp!=null){
+            mp.stop();
+            mp.reset();
+            mp.release();
+            mp=null;
+        }
+    }
+
 }

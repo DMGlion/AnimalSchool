@@ -31,6 +31,7 @@ public class SafariView extends AppCompatActivity {
         giraff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -41,6 +42,7 @@ public class SafariView extends AppCompatActivity {
         elephant.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -51,6 +53,7 @@ public class SafariView extends AppCompatActivity {
         lion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.winnero);
                 mp.start();
                 // Label Update will happen here
@@ -73,6 +76,7 @@ public class SafariView extends AppCompatActivity {
         hyena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -97,6 +101,7 @@ public class SafariView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.lion);
                 mp.start();
 
@@ -123,6 +128,14 @@ public class SafariView extends AppCompatActivity {
         // Add the following line to unregister the Sensor Manager onPause
         mSensorManager.unregisterListener(mShakeDetector);
         super.onPause();
+    }
+    private void stopPlaying(){
+        if(mp!=null){
+            mp.stop();
+            mp.reset();
+            mp.release();
+            mp = null;
+        }
     }
 
 }
