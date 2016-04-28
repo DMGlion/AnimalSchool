@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/menu_vertical_margin"
+    android:paddingLeft="@dimen/menu_horizontal_margin"
+    android:paddingRight="@dimen/menu_horizontal_margin"
+    android:paddingTop="@dimen/menu_vertical_margin"
+    tools:context="com.example.davidmgarcia6.animalschool.MenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/menu_back"
+        android:background="@drawable/menuback"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="right|center_vertical">
+
+        <Button
+            android:id="@+id/SafariLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safari"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/safaributton"
+            android:textColor="@color/text"/>
+
+
+        <Button
+            android:id="@+id/OceanLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ocean"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/oceanbutton"
+            android:textColor="@color/text"/>
+
+
+        <Button
+            android:id="@+id/ForestLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forest"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/forestbutton"
+            android:textColor="@color/text"/>
+
+        <Button
+            android:id="@+id/ArctictLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arctic"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/arcticbutton"
+            android:textColor="@color/textarctic"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

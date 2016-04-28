@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Animal School</string>
+    <string name="menu_back">Background Menu</string>
+    <string name="safari_back">Background Safari</string>
+    <string name="oceanbackground">Background Ocean</string>
+    <string name="forestbackground">Background Forest</string>
+    <string name="arcticbackground">Background Arctic</string>
+</resources>

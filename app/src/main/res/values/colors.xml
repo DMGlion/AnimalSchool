@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--color buttons-->
+    <!--safari-->
+    <color name="startColorSafari">#f7bfc72a</color>
+    <color name="endColorSafari">#b3b75b</color>
+    <color name="primSafari">#f76e730d</color>
+    <!--click safari-->
+    <color name="clickSafari">#f76e730d</color>
+
+
+    <!--ocean-->
+    <color name="startColorOcean">#f71fadd4</color>
+    <color name="endColorOcean">#3175cf</color>
+    <color name="primOcena">#1e4a86</color>
+    <!--click ocean-->
+    <color name="clickOcean">#1e4a86</color>
+
+
+    <!--forest-->
+    <color name="startColorForest">#f77aed53</color>
+    <color name="endColorForest">#f73de40e</color>
+    <color name="primForest">#f7225411</color>
+    <!--click ocean-->
+    <color name="clickForest">#f7225411</color>
+
+    <!--arctic-->
+    <color name="startColorArctic">#f7e6e6e6</color>
+    <color name="endColorArctic">#f7fefffe</color>
+    <color name="primArctic">#f7707070</color>
+    <!--click ocean-->
+    <color name="clickArctic">#f7838383</color>
+
+
+
+    <color name="textarctic">#816363</color>
+    <color name="text">#f7f2f2f2</color>
+
+</resources>
