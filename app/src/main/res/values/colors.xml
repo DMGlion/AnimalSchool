@@ -35,9 +35,18 @@
     <!--click ocean-->
     <color name="clickArctic">#f7838383</color>
 
-
-
     <color name="textarctic">#816363</color>
     <color name="text">#f7f2f2f2</color>
+
+    <!--states-->
+    <color name="startColorStats">#f7c22b2b</color>
+    <color name="endColorStats">#bf360c</color>
+    <color name="primStats">#bf360c</color>
+    <!--click ocean-->
+    <color name="clickStats">#f76b0808</color>
+
+
+
+
 
 </resources>

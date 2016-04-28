@@ -2,48 +2,57 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.davidmgarcia6.animalschool">
 
-
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"
+
+        <uses-feature
+            android:name="android.hardware.sensor.accelerometer"
+            android:required="true" />
+
+        <activity
+            android:name=".MenuActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait">
-            <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SafariView"
+            android:configChanges="orientation"
             android:label="Safari"
             android:parentActivityName=".MenuActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".OceanView"
+            android:configChanges="orientation"
             android:label="Ocean"
             android:parentActivityName=".MenuActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ForestView"
+            android:configChanges="orientation"
             android:label="Forest"
             android:parentActivityName=".MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ArcticView"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-
-        <activity android:name=".ArcticView"
             android:label="Arctic"
             android:parentActivityName=".MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StatsView"
+            android:label="Stats"
+            android:parentActivityName=".MenuActivity"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait"
+            />
     </application>
-
 </manifest>

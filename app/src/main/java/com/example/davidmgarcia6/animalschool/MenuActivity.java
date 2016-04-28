@@ -55,5 +55,15 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(newViewArctic);
             }
         });
+
+        Button newStats = (Button) findViewById(R.id.StatLevel);
+        assert newStats !=null;
+        newStats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent newViewStats = new Intent(v.getContext(),StatsView.class);
+                startActivity(newViewStats);
+            }
+        });
     }
 }
