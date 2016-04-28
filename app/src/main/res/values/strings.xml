@@ -5,4 +5,9 @@
     <string name="oceanbackground">Background Ocean</string>
     <string name="forestbackground">Background Forest</string>
     <string name="arcticbackground">Background Arctic</string>
+    <string name="lion_text_name">Name: Lion</string>
+    <string name="lion_text_diet">Diet: Meat</string>
+    <string name="lion_text_habitat">Habitat: Sub-Saharan Africa</string>
+    <string name="lion_text_congrats">Congratulations!</string>
+    <string name="lion_text_score">You scored 1 out of 5</string>
 </resources>
