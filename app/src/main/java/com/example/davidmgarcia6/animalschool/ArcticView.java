@@ -30,33 +30,37 @@ public class ArcticView extends AppCompatActivity{
         setContentView(R.layout.activity_arctic_view);
 
         Button other = (Button) findViewById(R.id.otherButton);
+        assert other !=null;
         other.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mp = MediaPlayer.create(ArcticView.this, R.raw.fail);
+                mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
                 mp.start();
             }
         });
 
         Button polarbear = (Button) findViewById(R.id.polatbearButton);
+        assert polarbear!=null;
         polarbear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mp = MediaPlayer.create(ArcticView.this, R.raw.fail);
+                mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
                 mp.start();
             }
         });
 
         Button sealion = (Button) findViewById(R.id.sealionButton);
+        assert sealion!=null;
         sealion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mp = MediaPlayer.create(ArcticView.this, R.raw.fail);
+                mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
                 mp.start();
             }
         });
 
         Button pinguin = (Button) findViewById(R.id.pinguinButton);
+        assert pinguin!=null;
         pinguin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
