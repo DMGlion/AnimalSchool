@@ -32,6 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/giraffbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/giraff" />
@@ -40,6 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/elephantbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -64,6 +66,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/lionbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/lion" />
@@ -72,6 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/hyenabutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"

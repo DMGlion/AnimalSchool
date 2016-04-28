@@ -3,12 +3,16 @@ package com.example.davidmgarcia6.animalschool;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class SafariView extends AppCompatActivity {
 
+    private MediaPlayer mp;
     // The following are used for the shake detection
     // Taken from http://jasonmcreynolds.com/?p=388
     private SensorManager mSensorManager;
@@ -20,6 +24,45 @@ public class SafariView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_safari_view);
 
+        Button giraff =(Button) findViewById(R.id.giraffbutton);
+        assert giraff != null;
+        giraff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                mp.start();
+            }
+        });
+
+        Button elephant = (Button) findViewById(R.id.elephantbutton);
+        assert elephant != null;
+        elephant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                mp.start();
+            }
+        });
+
+        Button lion = (Button) findViewById(R.id.lionbutton);
+        assert lion != null;
+        lion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(SafariView.this, R.raw.winnero);
+                mp.start();
+            }
+        });
+
+        Button hyena = (Button) findViewById(R.id.hyenabutton);
+        assert hyena != null;
+        hyena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                mp.start();
+            }
+        });
         // This needs to be inserted into the correct answer onClickListener
 //        if (UserScore.getQuizScore() < 1){
 //            UserScore.setQuizScore(1);
@@ -40,6 +83,9 @@ public class SafariView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                mp = MediaPlayer.create(SafariView.this, R.raw.lion);
+                mp.start();
+
                 handleShakeEvent(count);
             }
 
