@@ -22,8 +22,10 @@ public class OceanView extends AppCompatActivity {
         setContentView(R.layout.activity_ocean_view);
 
         // This needs to be inserted into the correct answer onClickListener
-        UserScore.setQuizScore(2);
-        Toast.makeText(getApplicationContext(), "UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+//        if (UserScore.getQuizScore() < 2){
+//            UserScore.setQuizScore(2);
+//            Toast.makeText(getApplicationContext(), "UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+//        }
 
         // ShakeDetector initialization
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
