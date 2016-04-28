@@ -32,6 +32,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/otherButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/other" />
@@ -40,6 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/polatbearButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -64,6 +66,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/pinguinButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/pinguin" />
@@ -72,6 +75,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/sealionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"

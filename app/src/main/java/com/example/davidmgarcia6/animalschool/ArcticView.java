@@ -4,11 +4,17 @@ import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class ArcticView extends AppCompatActivity{
+
+    private MediaPlayer mp;
+
 
     // The following are used for the shake detection
     // Taken from http://jasonmcreynolds.com/?p=388
@@ -22,6 +28,42 @@ public class ArcticView extends AppCompatActivity{
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arctic_view);
+
+        Button other = (Button) findViewById(R.id.otherButton);
+        other.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ArcticView.this, R.raw.fail);
+                mp.start();
+            }
+        });
+
+        Button polarbear = (Button) findViewById(R.id.polatbearButton);
+        polarbear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ArcticView.this, R.raw.fail);
+                mp.start();
+            }
+        });
+
+        Button sealion = (Button) findViewById(R.id.sealionButton);
+        sealion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ArcticView.this, R.raw.fail);
+                mp.start();
+            }
+        });
+
+        Button pinguin = (Button) findViewById(R.id.pinguinButton);
+        pinguin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ArcticView.this, R.raw.winnero);
+                mp.start();
+            }
+        });
 
         // This needs to be inserted into the correct answer onClickListener
 //        if (UserScore.getQuizScore() < 4){
@@ -44,6 +86,8 @@ public class ArcticView extends AppCompatActivity{
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                mp = MediaPlayer.create(ArcticView.this, R.raw.penguin3);
+                mp.start();
                 handleShakeEvent(count);
             }
 
