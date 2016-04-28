@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
+import java.io.Console;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -13,8 +16,6 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
-
 
         Button newSafari = (Button) findViewById(R.id.SafariLevel);
         assert newSafari != null;
@@ -51,10 +52,38 @@ public class MenuActivity extends AppCompatActivity {
         newArctic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newViewArctic = new Intent(v.getContext(),ArcticView.class);
+                Intent newViewArctic = new Intent(v.getContext(), ArcticView.class);
                 startActivity(newViewArctic);
             }
         });
+
+        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+
+        if (UserScore.getQuizScore() == 0){
+            newSafari.setEnabled(true);
+            newOcean.setEnabled(false);
+            newForest.setEnabled(false);
+            newArctic.setEnabled(false);
+        }
+        else if (UserScore.getQuizScore() == 1){
+            newSafari.setEnabled(true);
+            newOcean.setEnabled(true);
+            newForest.setEnabled(false);
+            newArctic.setEnabled(false);
+        }
+        else if (UserScore.getQuizScore() == 2){
+            newSafari.setEnabled(true);
+            newOcean.setEnabled(true);
+            newForest.setEnabled(true);
+            newArctic.setEnabled(false);
+
+        }
+        else{
+            newSafari.setEnabled(true);
+            newOcean.setEnabled(true);
+            newForest.setEnabled(true);
+            newArctic.setEnabled(true);
+        }
 
         Button newStats = (Button) findViewById(R.id.StatLevel);
         assert newStats !=null;

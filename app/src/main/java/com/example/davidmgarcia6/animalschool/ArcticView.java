@@ -23,6 +23,10 @@ public class ArcticView extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arctic_view);
 
+        // This needs to be inserted into the correct answer onClickListener
+        UserScore.setQuizScore(4);
+        Toast.makeText(getApplicationContext(), "UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+
         // ShakeDetector initialization
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager
@@ -43,6 +47,7 @@ public class ArcticView extends AppCompatActivity{
             private void handleShakeEvent(int count) {
 
                 Toast.makeText(getApplicationContext(), "Shake Event Triggered " + count + " times", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "The score is " + UserScore.getQuizScore() , Toast.LENGTH_SHORT).show();
             }
         });
     }
