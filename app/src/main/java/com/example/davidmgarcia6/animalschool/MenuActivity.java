@@ -57,9 +57,11 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+        //TODO: Need to investigate how to implement Gamification on the Menu buttons
 
-//        if (UserScore.getQuizScore() == 0 && UserScore.isPreviouslyUnlocked()){
+//        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+
+//        if (UserScore.getQuizScore() == 0){
 //            newSafari.setEnabled(true);
 //            newOcean.setEnabled(false);
 //            newForest.setEnabled(false);
@@ -70,7 +72,7 @@ public class MenuActivity extends AppCompatActivity {
 //            newForest.setAlpha(0.5f);
 //            newArctic.setAlpha(0.5f);
 //        }
-//        else if (UserScore.getQuizScore() == 1 && UserScore.getQuizScore() < 2){
+//        else if (UserScore.getQuizScore() == 1){
 //            newSafari.setEnabled(true);
 //            newOcean.setEnabled(true);
 //            newForest.setEnabled(false);
