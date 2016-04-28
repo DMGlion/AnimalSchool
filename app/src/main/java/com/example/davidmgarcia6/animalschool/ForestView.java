@@ -30,6 +30,7 @@ public class ForestView extends AppCompatActivity {
         koala.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -40,6 +41,7 @@ public class ForestView extends AppCompatActivity {
         monkey.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ForestView.this, R.raw.winnero);
                 mp.start();
             }
@@ -50,6 +52,7 @@ public class ForestView extends AppCompatActivity {
         bear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
                 mp.start();
             }
@@ -60,10 +63,13 @@ public class ForestView extends AppCompatActivity {
         bat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                stopPlaying();
                 mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
                 mp.start();
             }
         });
+
+
 
         // This needs to be inserted into the correct answer onClickListener
 //        if (UserScore.getQuizScore() < 3){
@@ -85,6 +91,7 @@ public class ForestView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                stopPlaying();
                 mp = MediaPlayer.create(ForestView.this, R.raw.monkey);
                 mp.start();
                 handleShakeEvent(count);
@@ -96,6 +103,8 @@ public class ForestView extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     public void onResume() {
@@ -110,4 +119,13 @@ public class ForestView extends AppCompatActivity {
         mSensorManager.unregisterListener(mShakeDetector);
         super.onPause();
     }
+    private void stopPlaying(){
+        if(mp!=null){
+            mp.stop();
+            mp.reset();
+            mp.release();
+            mp=null;
+        }
+    }
 }
+
