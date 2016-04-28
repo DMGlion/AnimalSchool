@@ -59,29 +59,29 @@ public class MenuActivity extends AppCompatActivity {
 
         Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
 
-        if (UserScore.getQuizScore() == 0){
-            newSafari.setEnabled(true);
-            newOcean.setEnabled(false);
-            newForest.setEnabled(false);
-            newArctic.setEnabled(false);
-
-            newSafari.setAlpha(1.0f);
-            newOcean.setAlpha(0.5f);
-            newForest.setAlpha(0.5f);
-            newArctic.setAlpha(0.5f);
-        }
-        else if (UserScore.getQuizScore() == 1){
-            newSafari.setEnabled(true);
-            newOcean.setEnabled(true);
-            newForest.setEnabled(false);
-            newArctic.setEnabled(false);
-
-            newSafari.setAlpha(1.0f);
-            newOcean.setAlpha(1.0f);
-            newForest.setAlpha(0.5f);
-            newArctic.setAlpha(0.5f);
-
-        }
+//        if (UserScore.getQuizScore() == 0 && UserScore.isPreviouslyUnlocked()){
+//            newSafari.setEnabled(true);
+//            newOcean.setEnabled(false);
+//            newForest.setEnabled(false);
+//            newArctic.setEnabled(false);
+//
+//            newSafari.setAlpha(1.0f);
+//            newOcean.setAlpha(0.5f);
+//            newForest.setAlpha(0.5f);
+//            newArctic.setAlpha(0.5f);
+//        }
+//        else if (UserScore.getQuizScore() == 1 && UserScore.getQuizScore() < 2){
+//            newSafari.setEnabled(true);
+//            newOcean.setEnabled(true);
+//            newForest.setEnabled(false);
+//            newArctic.setEnabled(false);
+//
+//            newSafari.setAlpha(1.0f);
+//            newOcean.setAlpha(1.0f);
+//            newForest.setAlpha(0.5f);
+//            newArctic.setAlpha(0.5f);
+//
+//        }
 //        else if (UserScore.getQuizScore() == 2){
 //            newSafari.setEnabled(true);
 //            newForest.setEnabled(true);
