@@ -3,12 +3,16 @@ package com.example.davidmgarcia6.animalschool;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class ForestView extends AppCompatActivity {
 
+    private MediaPlayer mp;
     // The following are used for the shake detection
     // Taken from http://jasonmcreynolds.com/?p=388
     private SensorManager mSensorManager;
@@ -20,6 +24,46 @@ public class ForestView extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forest_view);
+
+        Button koala = (Button) findViewById(R.id.koalabutton);
+        assert koala != null;
+        koala.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
+                mp.start();
+            }
+        });
+
+        Button monkey = (Button) findViewById(R.id.monkeybutton);
+        assert monkey != null;
+        monkey.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ForestView.this, R.raw.winnero);
+                mp.start();
+            }
+        });
+
+        Button bear = (Button) findViewById(R.id.bearbutton);
+        assert bear != null;
+        bear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
+                mp.start();
+            }
+        });
+
+        Button bat =(Button) findViewById(R.id.batbutton);
+        assert bat != null;
+        bat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
+                mp.start();
+            }
+        });
 
         // This needs to be inserted into the correct answer onClickListener
 //        if (UserScore.getQuizScore() < 3){
@@ -41,6 +85,8 @@ public class ForestView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+                mp = MediaPlayer.create(ForestView.this, R.raw.monkey);
+                mp.start();
                 handleShakeEvent(count);
             }
 
