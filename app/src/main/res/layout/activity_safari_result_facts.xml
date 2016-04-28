@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:alpha="0.9f"
+        android:alpha=".9"
         android:orientation="vertical"
         android:background="#fff2d2"
         >
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:padding="16dp"
-        android:alpha="0.9f"
+        android:alpha=".9"
         android:orientation="vertical"
         android:background="#fff2d2"
         >

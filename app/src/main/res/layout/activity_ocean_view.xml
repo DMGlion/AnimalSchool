@@ -30,6 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/sharkbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shark" />
@@ -38,6 +39,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/crabbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
@@ -62,6 +64,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/dolphinbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/dolphin" />
@@ -70,6 +73,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
+                android:id="@+id/orcbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
