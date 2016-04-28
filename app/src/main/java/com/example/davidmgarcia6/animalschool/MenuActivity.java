@@ -63,6 +63,7 @@ public class MenuActivity extends AppCompatActivity {
         //TODO: Fonts JuneGloom
         //TODO: Look at app crashes when audio is triggered too fast
         //TODO: Update the Quiz labels for Correct & Incorrect answers
+        //TODO: Remove Toasts from the ShakeHandlers as it's affecting performance
 
 
 //        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
