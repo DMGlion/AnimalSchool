@@ -13,4 +13,7 @@
     <string name="orca_text_name">Name: Orca</string>
     <string name="orca_text_diet">Diet: Birds, Squid and Octopuses</string>
     <string name="orca_text_habitat">Habitat: Oceans and Seas</string>
+    <string name="monkey_text_name">Name: Monkey</string>
+    <string name="monkey_text_diet">Diet: Bananas</string>
+    <string name="monkey_text_habitat">Habitat: Forest</string>
 </resources>
