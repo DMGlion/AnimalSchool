@@ -8,10 +8,80 @@
     android:paddingRight="@dimen/menu_horizontal_margin"
     android:paddingTop="@dimen/menu_vertical_margin"
     android:background="@drawable/backgrounsafari"
-    tools:context="com.example.davidmgarcia6.animalschool.SafariResultFactsActivity"
-    >
+    tools:context="com.example.davidmgarcia6.animalschool.SafariResultFactsActivity">
 
-    
+    <LinearLayout
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:alpha="0.9f"
+        android:orientation="vertical"
+        android:background="#fff2d2"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/liondisplay"
+            android:layout_gravity="center"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lion_text_name"
+            android:layout_gravity="bottom"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lion_text_diet"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lion_text_habitat"
+            android:textSize="24sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:alpha="0.9f"
+        android:orientation="vertical"
+        android:background="#fff2d2"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:text="@string/lion_text_congrats"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:text="@string/lion_text_score"/>
+    </LinearLayout>
+
 
 
 </RelativeLayout>
