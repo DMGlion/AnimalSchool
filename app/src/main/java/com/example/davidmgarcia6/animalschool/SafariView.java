@@ -30,10 +30,25 @@ public class SafariView extends AppCompatActivity {
 
         final TextView textview= (TextView) findViewById(R.id.updateresponse);
 
-        // Auto plays the Audio file 
-        stopPlaying();
-        mp = MediaPlayer.create(SafariView.this, R.raw.lion);
-        mp.start();
+        // Delay of 250ms before playing audio File
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Auto plays the Audio file
+                stopPlaying();
+                mp = MediaPlayer.create(SafariView.this, R.raw.lion);
+                mp.start();
+
+            }
+        }, 250);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getApplicationContext(),"Shake phone to listen again!",Toast.LENGTH_LONG).show();
+            }
+        }, 1500);
+
 
         Button giraffe =(Button) findViewById(R.id.giraffbutton);
         assert giraffe != null;
@@ -42,6 +57,7 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
@@ -56,6 +72,7 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
@@ -70,6 +87,7 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.winnero);
+                assert textview != null;
                 textview.setText("Correct");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,100,221,23));
@@ -96,6 +114,7 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
@@ -122,7 +141,6 @@ public class SafariView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
-
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.lion);
                 mp.start();
