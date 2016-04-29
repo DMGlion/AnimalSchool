@@ -7,7 +7,7 @@ import android.util.Log;
 import java.lang.reflect.Field;
 
 /**
- * Created by davidmgarcia6 on 29/04/16.
+ * Code adapted from https://gist.github.com/artem-zinnatullin/7749076
  */
 public class TypefaceUtil {
     public static void overrideFont(Context context, String defaultFontNameToOverride, String customFontFileNameInAssets) {
