@@ -29,7 +29,7 @@ public class ArcticView extends AppCompatActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        TypefaceUtil.overrideFont(getApplicationContext(), "SERIF", "JuneGloom.ttf");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arctic_view);
 
