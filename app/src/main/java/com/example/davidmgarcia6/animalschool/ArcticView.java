@@ -1,6 +1,7 @@
 package com.example.davidmgarcia6.animalschool;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class ArcticView extends AppCompatActivity{
@@ -29,6 +31,8 @@ public class ArcticView extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_arctic_view);
 
+        final TextView textview= (TextView) findViewById(R.id.updateresponse);
+
         Button other = (Button) findViewById(R.id.otherButton);
         assert other !=null;
         other.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +40,9 @@ public class ArcticView extends AppCompatActivity{
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -47,6 +54,9 @@ public class ArcticView extends AppCompatActivity{
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -58,6 +68,9 @@ public class ArcticView extends AppCompatActivity{
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -69,6 +82,9 @@ public class ArcticView extends AppCompatActivity{
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.winnero);
+                textview.setText("Correct");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,100,221,23));
                 mp.start();
             }
         });

@@ -45,7 +45,8 @@
     <!--click ocean-->
     <color name="clickStats">#f76b0808</color>
 
-
+    <!--wrong answer box color-->
+    <color name="wronganswer">#DD2C00</color>
 
 
 
