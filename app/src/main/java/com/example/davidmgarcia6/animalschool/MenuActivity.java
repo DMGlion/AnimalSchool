@@ -64,6 +64,7 @@ public class MenuActivity extends AppCompatActivity {
         //TODO: Look at app crashes when audio is triggered too fast
         //TODO: Update the Quiz labels for Correct & Incorrect answers
         //TODO: Remove Toasts from the ShakeHandlers as it's affecting performance
+        //TODO: Update gradle to target API 17 and higher
 
 
 //        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
