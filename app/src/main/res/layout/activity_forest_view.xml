@@ -90,11 +90,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">
         <TextView
+            android:id="@+id/updateresponse"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What animal do you hear?"
             android:textAlignment="center"
             android:padding="20dp"
+            android:textColor="@color/endColorArctic"
             android:background="@color/colorPrimary"/>
     </RelativeLayout>
 
