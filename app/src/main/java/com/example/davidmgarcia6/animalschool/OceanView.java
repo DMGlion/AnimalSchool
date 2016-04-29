@@ -2,6 +2,7 @@ package com.example.davidmgarcia6.animalschool;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
@@ -10,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class OceanView extends AppCompatActivity {
@@ -27,6 +29,13 @@ public class OceanView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ocean_view);
 
+        final TextView textview= (TextView) findViewById(R.id.updateresponse);
+
+        // Auto plays the Audio file
+        stopPlaying();
+        mp = MediaPlayer.create(OceanView.this, R.raw.wale);
+        mp.start();
+
         Button shark = (Button) findViewById(R.id.sharkbutton);
         assert shark != null;
         shark.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +43,9 @@ public class OceanView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -45,6 +57,9 @@ public class OceanView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -56,6 +71,9 @@ public class OceanView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -67,6 +85,9 @@ public class OceanView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.winnero);
+                textview.setText("Correct");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,100,221,23));
                 mp.start();
 
 
