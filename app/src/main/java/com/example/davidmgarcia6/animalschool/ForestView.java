@@ -50,7 +50,7 @@ public class ForestView extends AppCompatActivity {
             }
         });
 
-        
+
         Button monkey = (Button) findViewById(R.id.monkeybutton);
         assert monkey != null;
         monkey.setOnClickListener(new View.OnClickListener() {
