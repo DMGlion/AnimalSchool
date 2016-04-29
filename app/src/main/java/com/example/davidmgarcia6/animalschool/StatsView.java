@@ -23,32 +23,27 @@ public class StatsView extends AppCompatActivity {
         pieChart = (PieChart) findViewById(R.id.pieChart1);
         assert pieChart != null;
         pieChart.setDescription("Your Child's Score");
+        pieChart.setDragDecelerationFrictionCoef(0.95f);
 
         ArrayList<Entry> entries = new ArrayList<>();
-        entries.add(new Entry(UserScore.getQuizScore(), 0));
-        entries.add(new Entry(4f, 1));
-//        entries.add(new Entry(6f, 2));
-//        entries.add(new Entry(12f, 3));
-//        entries.add(new Entry(18f, 4));
-//        entries.add(new Entry(9f, 5));
-
+        entries.add(new Entry(UserScore.getQuizScore(),0));// User's Quiz Score
+        entries.add(new Entry(4,1));// Number of Levels in the App
+        entries.add(new Entry(UserScore.getNumGuesses(),2));// Number of incorrect guesses
 
         ArrayList<String> labels = new ArrayList<String>();
-        labels.add("Quiz Score\n");
-        labels.add("Number of Levels");
-//        labels.add("March");
-//        labels.add("April");
-//        labels.add("May");
-//        labels.add("June");
+        labels.add(0,"# Correct Answers");
+        labels.add(1,"# of Levels");
+        labels.add(2,"# Incorrect Guesses");
 
-        PieDataSet dataset = new PieDataSet(entries, "User's Stats");
-        dataset.setColors(ColorTemplate.COLORFUL_COLORS);
+        PieDataSet dataSet = new PieDataSet(entries,"Entries");
+        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 
-        PieData data = new PieData(labels, dataset); // initialize Piedata
+        PieData data = new PieData(labels, dataSet); // initialize PieData
         pieChart.setData(data);
         pieChart.invalidate();
+        pieChart.animateY(2000);
 
-        pieChart.setDescription("Description");
+        pieChart.setDescription("User's Application Statistics");
 
 
     }

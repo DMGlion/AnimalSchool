@@ -100,8 +100,6 @@ public class SafariView extends AppCompatActivity {
                 UserScore.setQuizScore(1);
                 UserScore.setSafaripreviouslyUnlocked(true);
 
-                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
-
 
                 //Code for redirecting to Facts screen is:
                 //http://stackoverflow.com/questions/6304035/how-to-display-an-activity-automatically-after-5-seconds

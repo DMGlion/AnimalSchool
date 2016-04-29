@@ -113,7 +113,9 @@ public class MenuActivity extends AppCompatActivity {
             newArctic.setAlpha(1.0f);
         }
 
-        Button newStats = (Button) findViewById(R.id.StatLevel);
+
+
+        final Button newStats = (Button) findViewById(R.id.StatLevel);
         assert newStats !=null;
         newStats.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,5 +124,14 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(newViewStats);
             }
         });
+
+        if (UserScore.getQuizScore() != 0 || UserScore.getNumGuesses() != 0){
+            newStats.setEnabled(true);
+        }
+        else{
+            newStats.setEnabled(false);
+            newStats.setAlpha(0);
+
+        }
     }
 }

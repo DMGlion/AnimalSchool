@@ -62,6 +62,8 @@ public class ForestView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -81,6 +83,8 @@ public class ForestView extends AppCompatActivity {
 
                 UserScore.setQuizScore(3);
                 UserScore.setForestpreviouslyUnlocked(true);
+
+
 
                 //Code for redirecting to Facts screen is:
                 //http://stackoverflow.com/questions/6304035/how-to-display-an-activity-automatically-after-5-seconds
@@ -108,6 +112,8 @@ public class ForestView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -123,6 +129,8 @@ public class ForestView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 

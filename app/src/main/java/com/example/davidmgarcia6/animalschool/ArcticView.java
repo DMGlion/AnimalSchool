@@ -66,6 +66,8 @@ public class ArcticView extends AppCompatActivity{
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -81,6 +83,8 @@ public class ArcticView extends AppCompatActivity{
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -96,6 +100,8 @@ public class ArcticView extends AppCompatActivity{
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
