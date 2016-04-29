@@ -26,9 +26,14 @@ public class SafariView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_safari_view);
 
-        Button giraff =(Button) findViewById(R.id.giraffbutton);
-        assert giraff != null;
-        giraff.setOnClickListener(new View.OnClickListener() {
+        // Auto plays the Audio file 
+        stopPlaying();
+        mp = MediaPlayer.create(SafariView.this, R.raw.lion);
+        mp.start();
+
+        Button giraffe =(Button) findViewById(R.id.giraffbutton);
+        assert giraffe != null;
+        giraffe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 stopPlaying();
@@ -101,16 +106,11 @@ public class SafariView extends AppCompatActivity {
 				 * method you would use to setup whatever you want done once the
 				 * device has been shook.
 				 */
+
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.lion);
                 mp.start();
 
-                handleShakeEvent(count);
-            }
-
-            private void handleShakeEvent(int count) {
-
-                Toast.makeText(getApplicationContext(),"Shake Event Triggered " + count + " times",Toast.LENGTH_SHORT).show();
             }
         });
 
