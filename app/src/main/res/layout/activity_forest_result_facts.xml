@@ -52,34 +52,27 @@
             android:gravity="center_horizontal"
             android:text="@string/monkey_text_habitat"
             android:textSize="24sp"/>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_margin="@dimen/activity_horizontal_margin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:padding="16dp"
-        android:alpha="0.9"
-        android:orientation="vertical"
-        android:background="#fff2d2"
-        >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="25sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="23sp"
             android:gravity="center_horizontal"
             android:text="@string/lion_text_congrats"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="25sp"
+            android:layout_marginBottom="0dp"
+            android:textSize="23sp"
             android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
             android:text="@string/lion_text_score"/>
+
     </LinearLayout>
+
 
 </RelativeLayout>
