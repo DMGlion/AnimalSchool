@@ -60,8 +60,10 @@ public class SafariView extends AppCompatActivity {
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
-                textview.setBackgroundColor(Color.argb(255,221,44,0));
+                textview.setBackgroundColor(Color.argb(255, 221, 44, 0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses()+1);
             }
         });
 
@@ -77,6 +79,8 @@ public class SafariView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -95,6 +99,8 @@ public class SafariView extends AppCompatActivity {
 
                 UserScore.setQuizScore(1);
                 UserScore.setSafaripreviouslyUnlocked(true);
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
 
 
                 //Code for redirecting to Facts screen is:
@@ -122,13 +128,11 @@ public class SafariView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
-        // This needs to be inserted into the correct answer onClickListener
-//        if (UserScore.getQuizScore() < 1){
-//            UserScore.setQuizScore(1);
-//            Toast.makeText(getApplicationContext(), "UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
-//        }
+
 
         // ShakeDetector initialization
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
