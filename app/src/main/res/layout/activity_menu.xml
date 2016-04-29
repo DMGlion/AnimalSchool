@@ -30,7 +30,8 @@
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/safaributton"
-            android:textColor="@color/text"/>
+            android:textColor="@color/text"
+            android:textSize="24sp"/>
 
 
         <Button
@@ -41,7 +42,8 @@
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/oceanbutton"
-            android:textColor="@color/text"/>
+            android:textColor="@color/text"
+            android:textSize="24sp"/>
 
 
         <Button
@@ -52,7 +54,8 @@
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/forestbutton"
-            android:textColor="@color/text"/>
+            android:textColor="@color/text"
+            android:textSize="24sp"/>
 
         <Button
             android:id="@+id/ArctictLevel"
@@ -62,7 +65,7 @@
             android:layout_marginRight="50dp"
             android:background="@drawable/arcticbutton"
             android:textColor="@color/textarctic"
-            />
+            android:textSize="24sp"/>
 
         <Button
             android:id="@+id/StatLevel"
@@ -73,7 +76,8 @@
             android:layout_marginRight="50dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/statsbutton"
-            android:textColor="@color/text"/>
+            android:textColor="@color/text"
+            android:textSize="24sp"/>
 
     </LinearLayout>
 

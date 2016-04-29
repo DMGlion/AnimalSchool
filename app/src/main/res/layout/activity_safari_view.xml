@@ -98,6 +98,7 @@
             android:textAlignment="center"
             android:textColor="@color/endColorArctic"
             android:padding="20dp"
-            android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"
+            android:textSize="24sp"/>
     </RelativeLayout>
 </FrameLayout>
