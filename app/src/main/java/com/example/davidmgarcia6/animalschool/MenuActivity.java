@@ -57,14 +57,12 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        //TODO: Need to investigate how to implement Gamification on the Menu buttons
-        //TODO: Hookup Facts screens from correct answers with timers
         //TODO: Implement MPAndroidCharts for the Stats Screen
         //TODO: Fonts JuneGloom
-        //TODO: Look at app crashes when audio is triggered too fast
-        //TODO: Update the Quiz labels for Correct & Incorrect answers
-        //TODO: Remove Toasts from the ShakeHandlers as it's affecting performance
-        //TODO: Update gradle to target API 17 and higher
+
+
+
+
 
 
         if (UserScore.getQuizScore() == 0 && !UserScore.isSafaripreviouslyUnlocked()){
