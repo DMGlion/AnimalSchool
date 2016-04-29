@@ -62,6 +62,8 @@ public class OceanView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -77,6 +79,8 @@ public class OceanView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -92,6 +96,8 @@ public class OceanView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
+
+                UserScore.setNumGuesses(UserScore.getNumGuesses() + 1);
             }
         });
 
@@ -125,14 +131,6 @@ public class OceanView extends AppCompatActivity {
             }
         });
 
-
-
-
-        // This needs to be inserted into the correct answer onClickListener
-//        if (UserScore.getQuizScore() < 2){
-//            UserScore.setQuizScore(2);
-//            Toast.makeText(getApplicationContext(), "UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
-//        }
 
         // ShakeDetector initialization
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
