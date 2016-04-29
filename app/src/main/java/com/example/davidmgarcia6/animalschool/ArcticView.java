@@ -35,6 +35,11 @@ public class ArcticView extends AppCompatActivity{
 
         final TextView textview= (TextView) findViewById(R.id.updateresponse);
 
+        // Auto plays the Audio file
+        stopPlaying();
+        mp = MediaPlayer.create(ArcticView.this, R.raw.penguin3);
+        mp.start();
+
         Button other = (Button) findViewById(R.id.otherButton);
         assert other !=null;
         other.setOnClickListener(new View.OnClickListener() {

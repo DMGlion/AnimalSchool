@@ -2,6 +2,7 @@ package com.example.davidmgarcia6.animalschool;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
@@ -10,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SafariView extends AppCompatActivity {
@@ -26,6 +28,8 @@ public class SafariView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_safari_view);
 
+        final TextView textview= (TextView) findViewById(R.id.updateresponse);
+
         // Auto plays the Audio file 
         stopPlaying();
         mp = MediaPlayer.create(SafariView.this, R.raw.lion);
@@ -38,6 +42,9 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -49,6 +56,9 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
@@ -60,6 +70,9 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.winnero);
+                textview.setText("Correct");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,100,221,23));
                 mp.start();
                 // Label Update will happen here
 
@@ -83,6 +96,9 @@ public class SafariView extends AppCompatActivity {
             public void onClick(View v) {
                 stopPlaying();
                 mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                textview.setText("Try again");
+//                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
+                textview.setBackgroundColor(Color.argb(255,221,44,0));
                 mp.start();
             }
         });
