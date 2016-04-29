@@ -35,10 +35,24 @@ public class ArcticView extends AppCompatActivity{
 
         final TextView textview= (TextView) findViewById(R.id.updateresponse);
 
-        // Auto plays the Audio file
-        stopPlaying();
-        mp = MediaPlayer.create(ArcticView.this, R.raw.penguin3);
-        mp.start();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Auto plays the Audio file
+                stopPlaying();
+                mp = MediaPlayer.create(ArcticView.this, R.raw.penguin3);
+                mp.start();
+            }
+        }, 250);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Toast.makeText(getApplicationContext(), "Shake phone to listen again!", Toast.LENGTH_LONG).show();
+            }
+        }, 1500);
+
+
 
         Button other = (Button) findViewById(R.id.otherButton);
         assert other !=null;
