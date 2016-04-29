@@ -21,6 +21,6 @@ public class SafariResultFactsActivity extends AppCompatActivity {
                 SafariResultFactsActivity.this.startActivity(mainIntent);
                 SafariResultFactsActivity.this.finish();
             }
-        }, 4000);
+        }, 3500);
     }
 }
