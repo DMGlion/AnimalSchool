@@ -97,6 +97,7 @@
             android:text="What animal do you hear?"
             android:textAlignment="center"
             android:padding="20dp"
+            android:textColor="@color/endColorArctic"
             android:background="@color/colorPrimary"/>
     </RelativeLayout>
 
