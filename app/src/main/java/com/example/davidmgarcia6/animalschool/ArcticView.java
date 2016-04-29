@@ -149,13 +149,6 @@ public class ArcticView extends AppCompatActivity{
                 stopPlaying();
                 mp = MediaPlayer.create(ArcticView.this, R.raw.penguin3);
                 mp.start();
-                handleShakeEvent(count);
-            }
-
-            private void handleShakeEvent(int count) {
-
-                Toast.makeText(getApplicationContext(), "Shake Event Triggered " + count + " times", Toast.LENGTH_SHORT).show();
-//                Toast.makeText(getApplicationContext(), "The score is " + UserScore.getQuizScore() , Toast.LENGTH_SHORT).show();
             }
         });
     }

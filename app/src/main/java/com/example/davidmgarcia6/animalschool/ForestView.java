@@ -148,12 +148,6 @@ public class ForestView extends AppCompatActivity {
                 stopPlaying();
                 mp = MediaPlayer.create(ForestView.this, R.raw.monkey);
                 mp.start();
-                handleShakeEvent(count);
-            }
-
-            private void handleShakeEvent(int count) {
-
-                Toast.makeText(getApplicationContext(), "Shake Event Triggered " + count + " times", Toast.LENGTH_SHORT).show();
             }
         });
     }

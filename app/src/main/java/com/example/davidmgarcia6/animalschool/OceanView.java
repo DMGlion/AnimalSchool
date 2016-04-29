@@ -148,12 +148,6 @@ public class OceanView extends AppCompatActivity {
                 stopPlaying();
                 mp = MediaPlayer.create(OceanView.this, R.raw.wale);
                 mp.start();
-                handleShakeEvent(count);
-            }
-
-            private void handleShakeEvent(int count) {
-
-                Toast.makeText(getApplicationContext(), "Shake Event Triggered " + count + " times", Toast.LENGTH_SHORT).show();
             }
         });
     }
