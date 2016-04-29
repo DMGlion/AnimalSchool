@@ -79,6 +79,9 @@ public class ForestView extends AppCompatActivity {
                 textview.setBackgroundColor(Color.argb(255,100,221,23));
                 mp.start();
 
+                UserScore.setQuizScore(3);
+                UserScore.setForestpreviouslyUnlocked(true);
+
                 //Code for redirecting to Facts screen is:
                 //http://stackoverflow.com/questions/6304035/how-to-display-an-activity-automatically-after-5-seconds
                 new Handler().postDelayed(new Runnable() {

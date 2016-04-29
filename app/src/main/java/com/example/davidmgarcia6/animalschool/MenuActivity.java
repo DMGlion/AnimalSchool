@@ -67,54 +67,53 @@ public class MenuActivity extends AppCompatActivity {
         //TODO: Update gradle to target API 17 and higher
 
 
-//        Toast.makeText(getApplicationContext(),"UserScore is now: " + UserScore.getQuizScore(), Toast.LENGTH_SHORT).show();
+        if (UserScore.getQuizScore() == 0 && !UserScore.isSafaripreviouslyUnlocked()){
 
-//        if (UserScore.getQuizScore() == 0){
-//            newSafari.setEnabled(true);
-//            newOcean.setEnabled(false);
-//            newForest.setEnabled(false);
-//            newArctic.setEnabled(false);
-//
-//            newSafari.setAlpha(1.0f);
-//            newOcean.setAlpha(0.5f);
-//            newForest.setAlpha(0.5f);
-//            newArctic.setAlpha(0.5f);
-//        }
-//        else if (UserScore.getQuizScore() == 1){
-//            newSafari.setEnabled(true);
-//            newOcean.setEnabled(true);
-//            newForest.setEnabled(false);
-//            newArctic.setEnabled(false);
-//
-//            newSafari.setAlpha(1.0f);
-//            newOcean.setAlpha(1.0f);
-//            newForest.setAlpha(0.5f);
-//            newArctic.setAlpha(0.5f);
-//
-//        }
-//        else if (UserScore.getQuizScore() == 2){
-//            newSafari.setEnabled(true);
-//            newForest.setEnabled(true);
-//            newOcean.setEnabled(true);
-//            newArctic.setEnabled(false);
-//
-//            newSafari.setAlpha(1.0f);
-//            newForest.setAlpha(1.0f);
-//            newOcean.setAlpha(1.0f);
-//            newArctic.setAlpha(0.5f);
-//
-//        }
-//        else{
-//            newSafari.setEnabled(true);
-//            newForest.setEnabled(true);
-//            newOcean.setEnabled(true);
-//            newArctic.setEnabled(true);
-//
-//            newSafari.setAlpha(1.0f);
-//            newForest.setAlpha(1.0f);
-//            newOcean.setAlpha(1.0f);
-//            newArctic.setAlpha(1.0f);
-//        }
+            newSafari.setEnabled(true);
+            newOcean.setEnabled(false);
+            newForest.setEnabled(false);
+            newArctic.setEnabled(false);
+
+            newSafari.setAlpha(1.0f);
+            newOcean.setAlpha(0.0f);
+            newForest.setAlpha(0.0f);
+            newArctic.setAlpha(0.0f);
+        }
+        else if (UserScore.getQuizScore() == 1 && !UserScore.isOceanpreviouslyUnlocked()){
+            newSafari.setEnabled(true);
+            newOcean.setEnabled(true);
+            newForest.setEnabled(false);
+            newArctic.setEnabled(false);
+
+            newSafari.setAlpha(1.0f);
+            newOcean.setAlpha(1.0f);
+            newForest.setAlpha(0.0f);
+            newArctic.setAlpha(0.0f);
+
+        }
+        else if (UserScore.getQuizScore() == 2 && !UserScore.isForestpreviouslyUnlocked()){
+            newSafari.setEnabled(true);
+            newForest.setEnabled(true);
+            newOcean.setEnabled(true);
+            newArctic.setEnabled(false);
+
+            newSafari.setAlpha(1.0f);
+            newForest.setAlpha(1.0f);
+            newOcean.setAlpha(1.0f);
+            newArctic.setAlpha(0.0f);
+
+        }
+        else{
+            newSafari.setEnabled(true);
+            newForest.setEnabled(true);
+            newOcean.setEnabled(true);
+            newArctic.setEnabled(true);
+
+            newSafari.setAlpha(1.0f);
+            newForest.setAlpha(1.0f);
+            newOcean.setAlpha(1.0f);
+            newArctic.setAlpha(1.0f);
+        }
 
         Button newStats = (Button) findViewById(R.id.StatLevel);
         assert newStats !=null;

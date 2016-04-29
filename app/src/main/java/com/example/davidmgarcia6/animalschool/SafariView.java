@@ -92,7 +92,10 @@ public class SafariView extends AppCompatActivity {
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
                 textview.setBackgroundColor(Color.argb(255,100,221,23));
                 mp.start();
-                // Label Update will happen here
+
+                UserScore.setQuizScore(1);
+                UserScore.setSafaripreviouslyUnlocked(true);
+
 
                 //Code for redirecting to Facts screen is:
                 //http://stackoverflow.com/questions/6304035/how-to-display-an-activity-automatically-after-5-seconds

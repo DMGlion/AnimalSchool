@@ -112,6 +112,9 @@ public class ArcticView extends AppCompatActivity{
                 textview.setBackgroundColor(Color.argb(255,100,221,23));
                 mp.start();
 
+                UserScore.setQuizScore(4);
+                UserScore.setArcticpreviouslyUnlocked(true);
+
                 //Code for redirecting to Facts screen is:
                 //http://stackoverflow.com/questions/6304035/how-to-display-an-activity-automatically-after-5-seconds
                 new Handler().postDelayed(new Runnable() {
