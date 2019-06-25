@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class SafariView extends AppCompatActivity {
+public class SafariViewLevelOne extends AppCompatActivity {
 
     private MediaPlayer mp;
     // The following are used for the shake detection
@@ -36,7 +36,7 @@ public class SafariView extends AppCompatActivity {
             public void run() {
                 // Auto plays the Audio file
                 stopPlaying();
-                mp = MediaPlayer.create(SafariView.this, R.raw.lion);
+                mp = MediaPlayer.create(SafariViewLevelOne.this, R.raw.lion);
                 mp.start();
 
             }
@@ -56,7 +56,7 @@ public class SafariView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                mp = MediaPlayer.create(SafariViewLevelOne.this, R.raw.incorrect);
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -73,7 +73,7 @@ public class SafariView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                mp = MediaPlayer.create(SafariViewLevelOne.this, R.raw.incorrect);
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -90,7 +90,7 @@ public class SafariView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(SafariView.this, R.raw.winnero);
+                mp = MediaPlayer.create(SafariViewLevelOne.this, R.raw.winnero);
                 assert textview != null;
                 textview.setText("Correct");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -106,9 +106,9 @@ public class SafariView extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        final Intent mainIntent = new Intent(SafariView.this, SafariResultFactsActivity.class);
-                        SafariView.this.startActivity(mainIntent);
-                        SafariView.this.finish();
+                        final Intent mainIntent = new Intent(SafariViewLevelOne.this, SafariResultFactsActivity.class);
+                        SafariViewLevelOne.this.startActivity(mainIntent);
+                        SafariViewLevelOne.this.finish();
                     }
                 }, 1000);
             }
@@ -120,7 +120,7 @@ public class SafariView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(SafariView.this, R.raw.incorrect);
+                mp = MediaPlayer.create(SafariViewLevelOne.this, R.raw.incorrect);
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -147,7 +147,7 @@ public class SafariView extends AppCompatActivity {
 				 * device has been shook.
 				 */
                 stopPlaying();
-                mp = MediaPlayer.create(SafariView.this, R.raw.lion);
+                mp = MediaPlayer.create(SafariViewLevelOne.this, R.raw.lion);
                 mp.start();
 
             }

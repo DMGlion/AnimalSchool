@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/menu_horizontal_margin"
     android:paddingRight="@dimen/menu_horizontal_margin"
     android:paddingTop="@dimen/menu_vertical_margin"
-    tools:context="com.example.davidmgarcia6.animalschool.ForestView">
+    tools:context="com.example.davidmgarcia6.animalschool.ForestViewLevelOne">
 
     <ImageView
         android:layout_width="match_parent"

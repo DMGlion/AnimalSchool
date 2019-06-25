@@ -17,7 +17,7 @@ public class SafariResultFactsActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent = new Intent(SafariResultFactsActivity.this, SafariView.class);
+                final Intent mainIntent = new Intent(SafariResultFactsActivity.this, SafariViewLevelTwo.class);
                 SafariResultFactsActivity.this.startActivity(mainIntent);
                 SafariResultFactsActivity.this.finish();
             }

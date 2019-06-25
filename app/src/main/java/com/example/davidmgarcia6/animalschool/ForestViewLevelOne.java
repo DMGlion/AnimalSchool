@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ForestView extends AppCompatActivity {
+public class ForestViewLevelOne extends AppCompatActivity {
 
     private MediaPlayer mp;
     // The following are used for the shake detection
@@ -36,7 +36,7 @@ public class ForestView extends AppCompatActivity {
             public void run() {
                 // Auto plays the Audio file
                 stopPlaying();
-                mp = MediaPlayer.create(ForestView.this, R.raw.monkey);
+                mp = MediaPlayer.create(ForestViewLevelOne.this, R.raw.monkey);
                 mp.start();
             }
         }, 250);
@@ -56,7 +56,7 @@ public class ForestView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
+                mp = MediaPlayer.create(ForestViewLevelOne.this, R.raw.incorrect);
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -74,7 +74,7 @@ public class ForestView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(ForestView.this, R.raw.winnero);
+                mp = MediaPlayer.create(ForestViewLevelOne.this, R.raw.winnero);
                 assert textview != null;
                 textview.setText("Correct");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -91,9 +91,9 @@ public class ForestView extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        final Intent mainIntent = new Intent(ForestView.this, ForestResultFactsActivity.class);
-                        ForestView.this.startActivity(mainIntent);
-                        ForestView.this.finish();
+                        final Intent mainIntent = new Intent(ForestViewLevelOne.this, ForestResultFactsActivity.class);
+                        ForestViewLevelOne.this.startActivity(mainIntent);
+                        ForestViewLevelOne.this.finish();
                     }
                 }, 1000);
 
@@ -106,7 +106,7 @@ public class ForestView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
+                mp = MediaPlayer.create(ForestViewLevelOne.this, R.raw.incorrect);
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -123,7 +123,7 @@ public class ForestView extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 stopPlaying();
-                mp = MediaPlayer.create(ForestView.this, R.raw.incorrect);
+                mp = MediaPlayer.create(ForestViewLevelOne.this, R.raw.incorrect);
                 assert textview != null;
                 textview.setText("Try again");
 //                reference http://stackoverflow.com/questions/4602902/how-to-set-the-text-color-of-textview-in-code
@@ -157,7 +157,7 @@ public class ForestView extends AppCompatActivity {
 				 * device has been shook.
 				 */
                 stopPlaying();
-                mp = MediaPlayer.create(ForestView.this, R.raw.monkey);
+                mp = MediaPlayer.create(ForestViewLevelOne.this, R.raw.monkey);
                 mp.start();
             }
         });

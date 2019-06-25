@@ -17,7 +17,7 @@ public class ForestResultFactsActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                final Intent mainIntent = new Intent(ForestResultFactsActivity.this, ForestView.class);
+                final Intent mainIntent = new Intent(ForestResultFactsActivity.this, ForestViewLevelOne.class);
                 ForestResultFactsActivity.this.startActivity(mainIntent);
                 ForestResultFactsActivity.this.finish();
             }

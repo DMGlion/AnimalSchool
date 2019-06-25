@@ -1,14 +1,10 @@
 package com.example.davidmgarcia6.animalschool;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-
-import java.io.Console;
 
 public class MenuActivity extends AppCompatActivity {
 
@@ -23,7 +19,7 @@ public class MenuActivity extends AppCompatActivity {
         newSafari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newViewSafari = new Intent(v.getContext(), SafariView.class);
+                Intent newViewSafari = new Intent(v.getContext(), SafariViewLevelOne.class);
                 startActivity(newViewSafari);
             }
         });
@@ -43,7 +39,7 @@ public class MenuActivity extends AppCompatActivity {
         newForest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newViewForest = new Intent(v.getContext(),ForestView.class);
+                Intent newViewForest = new Intent(v.getContext(), ForestViewLevelOne.class);
                 startActivity(newViewForest);
             }
         });

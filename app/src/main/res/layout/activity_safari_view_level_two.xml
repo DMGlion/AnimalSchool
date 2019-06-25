@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/menu_horizontal_margin"
     android:paddingRight="@dimen/menu_horizontal_margin"
     android:paddingTop="@dimen/menu_vertical_margin"
-    tools:context="com.example.davidmgarcia6.animalschool.SafariViewLevelOne">
+    tools:context="com.example.davidmgarcia6.animalschool.SafariViewLevelTwo">
 
     <ImageView
         android:layout_width="match_parent"
@@ -41,11 +41,11 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
             <Button
-                android:id="@+id/elephantbutton"
+                android:id="@+id/monkeybutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:background="@drawable/elephant" />
+                android:background="@drawable/monkey" />
             <Space
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"

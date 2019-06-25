@@ -23,9 +23,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SafariView"
+            android:name=".SafariViewLevelOne"
             android:configChanges="orientation"
             android:label="Safari"
+            android:parentActivityName=".MenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SafariViewLevelTwo"
+            android:configChanges="orientation"
+            android:label="SafariTwo"
             android:parentActivityName=".MenuActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -35,7 +41,7 @@
             android:parentActivityName=".MenuActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ForestView"
+            android:name=".ForestViewLevelOne"
             android:configChanges="orientation"
             android:label="Forest"
             android:parentActivityName=".MenuActivity"
